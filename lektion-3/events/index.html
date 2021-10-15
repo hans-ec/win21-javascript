@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hans Mattin-Lassei, EPN Sverige AB">
+    <title></title>
+    
+    <script src="https://kit.fontawesome.com/124ac6c2b5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- POST = Body = Känslig information               = skicka ett vykort i ett kuvert -->
+    <!-- GET  = QueryString = Icke känslig information   = skicka ett vykort utan ett kuvert, alla kan se vad som står på vykortet -->
+
+
+
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="col-6">
+            <form id="contactForm" novalidate>
+                <div class="mb-3">
+                    <input id="name" class="form-control" placeholder="Ditt namn..." type="text">
+                    <div id="error-name" class="text-danger mt-1 ms-2" style="font-size: 0.8rem" ></div>
+                </div>
+                <div class="mb-3">
+                    <input id="email" class="form-control" placeholder="Din e-postadress..." type="email">
+                    <div id="error-email" class="text-danger mt-1 ms-2" style="font-size: 0.8rem" ></div>
+                </div>
+                <div class="mb-3">
+                    <input id="password" class="form-control" placeholder="Ditt lösenord..." type="password">
+                    <div id="error-password" class="text-danger mt-1 ms-2" style="font-size: 0.8rem" ></div>
+                </div>
+                <div class="mb-3">
+                    <textarea id="message" class="form-control" style="resize: none; height: 200px" placeholder="Meddelande..."></textarea>
+                    <div id="error-message" class="text-danger mt-1 ms-2" style="font-size: 0.8rem" ></div>
+                </div>
+        
+                <button type="submit" class="btn btn-secondary">SKICKA IN</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
